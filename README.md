@@ -97,27 +97,11 @@ com.example
 ## 🚦 Getting Started
 
 ### Prerequisites
-* **Android Studio Iguana** (or newer)
-* **Android SDK 34** (targetSdkVersion)
-* **Gradle 8.2+**
 * An Android Device running **Android 8.0 (API 26)** or higher (needed for the system overlay service).
 
-### Real-Time Secrets Configuration
-Secure credentials (such as your **Gemini API Key**) are isolated using the Android Secrets Gradle Plugin.
-1. Create a `.env` file in your root workspace:
-   ```env
-   GEMINI_API_KEY=your_actual_api_key_here
-   ```
-2. The compiler will automatically bind this coordinate into your `BuildConfig.GEMINI_API_KEY` at build-time. No secrets are ever hardcoded.
 
 ### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/monolith-android.git
-   ```
-2. Open the project in Android Studio.
-3. Sync Project with Gradle Files.
-4. Hit **Run** (`Shift + F10`) to deploy to your emulator or physical hardware.
+Just Dowload the Apk and install as a normal app.
 
 ---
 
@@ -127,10 +111,3 @@ To serve collaborative notifications and headups alerts flawlessly, Monolith emp
 * `POST_NOTIFICATIONS`: Registers immediate action cards in the Android system shade.
 * `FOREGROUND_SERVICE`: Runs the background notification and sync worker.
 * `INTERNET`: Bridges workspace sharing and Gemini AI query pipelines.
-
----
-
-## 🏆 Project Achievements
-* **100% Jetpack Compose implementation** — absolutely zero legacy Android XML layouts.
-* **Rigorous edge-to-edge UI safety** respecting system navigation rails in portrait, landscape, and multi-window configurations.
-* **Low memory footprint** background synchronization leveraging efficient asynchronous Kotlin Flows.
